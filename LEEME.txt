@@ -1,0 +1,26 @@
+SISTEMA ACADEMICO EN PYTHON - MVC
+
+REQUISITOS
+- Python 3.10 o superior (no necesita instalar librerias externas).
+
+COMO EJECUTAR EN WINDOWS / VISUAL STUDIO CODE
+1. Descomprime tarea-crud-main.zip.
+2. Abre en Visual Studio Code la carpeta tarea-crud-main/proyecto_estudiantes.
+3. Abre Terminal > Nueva terminal.
+4. Ejecuta: python main.py
+   Si el comando anterior no funciona, prueba: py main.py
+
+PRUEBAS AUTOMATICAS
+Desde la carpeta proyecto_estudiantes, ejecuta:
+    python test_estudiantes.py
+
+ARCHIVOS PRINCIPALES
+- models.py: ModeloBase, Persona, Estudiante, Materia y Matricula.
+- views.py: validaciones y operaciones CRUD de estudiantes, materias y matriculas.
+- main.py: menus interactivos por consola.
+- shared/: utilidades de consola y lectura/escritura JSON.
+- data/: datos iniciales de ejemplo en estudiantes.json, materias.json y matriculas.json.
+
+NOTA
+El estado Aprobado/Reprobado se calcula a partir de la nota y no se guarda en el JSON.
+Al registrar una matricula se descuenta un cupo; al retirarla, el cupo se devuelve.
